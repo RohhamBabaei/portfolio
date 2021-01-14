@@ -1,0 +1,465 @@
+/* Import Fonts */
+@import url(./fonts.css);
+
+/* Import Variable */
+@import url(./partial/_variable.css);
+
+/* Import Global CSS */
+@import url(./partial/_global.css);
+
+
+
+    /* navbar Begins */
+
+.header .mainMenu .navbar .navbar-brand{
+    padding: 0 2rem 0 5rem;
+}
+
+.header .mainMenu .navbar{
+    padding: 1rem 20rem ;
+}
+
+.header .mainMenu .nav-item .nav-link{
+    font: normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--titleColor);
+}
+
+.header .mainMenu .navbar-nav .active a{
+    background: var(--gradientColor);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+.header .mainMenu .navbar-nav a:hover{
+    background: var(--gradientColor);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+    
+    /* navbar Ends */
+
+    /* Portofolio Banner Begins */
+
+    .mainContainer .portofolioBanner{
+        background: url(../img/banner/810.jpg) no-repeat 0% 50%;
+    }
+
+    .mainContainer .portofolioBanner .portofolioTitle h3{
+        padding-top: 35%;
+        font-weight: 500;
+    }
+
+    .mainContainer .portofolioBanner .portofolioTitle h3::after{
+        content: "";
+        height: 2px;
+        width: 18vw;
+        background: #000000;
+        /* display: inline-block; */
+        margin-left: 5%;
+        transform: translateY(-10px);
+    }
+
+    .mainContainer .portofolioBanner .portofolioTitle h1{
+        font-size: 5rem;
+
+    }
+    
+    .mainContainer .portofolioBanner .portofolioTitle h4{
+        font-size: 1.5rem;
+        
+    }
+
+    .mainContainer .portofolioBanner .bannerImage > img{
+        padding: 7rem 0;
+        width: 90rem;
+    }
+    /* Portofolio Banner Ends */
+
+    /* About Me Begins */
+    .mainContainer .aboutMe{
+        padding: 8rem 5rem;
+
+    }
+
+    .mainContainer .aboutMe  .aboutTitle h2 > span, .careerPathTimeLine .aboutTitle h2 > span, .certification .aboutTitle h2 > span,
+    .moreInfo .moreInfoTitle .aboutTitle h2 > span{
+        display: block;
+        font: normal bold 49px/60px var(--roboto);
+        letter-spacing: 20px ;
+
+    }
+
+    .mainContainer .aboutMe .aboutTitle .paragraph > p{
+        padding: .4rem 0;
+    }
+    /* About Me Ends */
+
+     /* Timeline Begins */
+
+    .timelineTitle h2{
+        display: block;
+        font: normal bold 49px/60px var(--roboto);
+        letter-spacing: 20px ;
+
+    }
+
+    .circle{
+        padding: 16px 20px ;
+        border-radius: 50%;
+        background-color: var( --primaryColor);
+        color: whitesmoke;
+        z-index: 2;
+    }
+    p{
+        font: normal var(--roboto);
+        color:var(--textColor);
+    }
+    
+    .careerPathTimeLine h4{
+        font-family:var(--roboto);
+        color: var(--primaryColor);
+        text-transform: uppercase;
+    }
+
+    .careerPathTimeLine p,a{
+        font-family:var(--roboto);
+        font-weight: bold;
+    }
+
+    .connecting-line.row .col-2{
+        align-self: stretch;
+        display: inline;
+    }
+
+    .connecting-line.row .col-2::after{
+        content: "";
+        position: absolute;
+        border-left: 3px solid var(--primaryColor);
+        z-index: 1;
+    }
+
+    .connecting-line.row .col-2.bottom::after{
+        height: 50%;
+        left: 50%;
+        top: 50%;
+    }
+
+    .connecting-line.row .col-2.full-right::after{
+        height: 100%;
+        left: calc(50% - 3px);
+    }
+    .connecting-line.row .col-2.full-left::after{
+        height: 100%;
+        right: calc(50% - 3px);
+    }
+    
+    .connecting-line.row .col-2.top::after{
+        height: 50%;
+        left: 50%;
+        top: 0%;
+    }
+
+    .timeline div{
+        padding: 0;
+        height: 40px;
+    }
+
+    .timeline hr{
+        border-top: 3px solid var(--primaryColor);
+        margin: 0;
+        top: 17px;
+        position: relative;
+    }
+
+    .timeline .col-2{
+        display: flex;
+        overflow: hidden;
+    }
+
+    .timeline .corner{
+        border: 3px solid var(--primaryColor);
+        width: 100%;
+        position: relative;
+        border-radius: 15px;
+    }
+
+    .timeline .top-right{
+        left: 50%;
+        top: -50%;
+    }
+
+    .timeline .left-bottom{
+        left: -50%;
+        top: calc(50% - 3px);
+    }
+
+    .timeline .top-left{
+        left: -50%;
+        top: -50%;
+    }
+
+    .timeline .right-bottom{
+        left: 50%;
+        top: calc(50% - 3px);
+    }
+
+    .careerPathTimeLine{
+        background: url(../img/banner/Untitled-1.png) no-repeat 0% 50%;
+    }
+
+
+     /* Timeline Ends */
+
+     /* Certification Begins */
+
+    .mainContainer .certification{
+        padding: 10rem 20rem;
+        margin-bottom: 4rem;
+    }
+
+    .mainContainer .certification .firstRow .col-lg-4{
+        display: flex;
+        justify-content: center;
+    }
+
+    .mainContainer .certification .firstRow .col-lg-4 > .singleCertification{
+        /* border: 1px solid var(--borderColor); */
+        text-align: center;
+        padding: 1.8rem 0rem;
+        margin: .9rem 0;
+        width: 180px;
+        height: 230px;
+        cursor: pointer;
+        transition: box-shadow .7s ease;
+    }
+
+    .mainContainer .certification .firstRow .col-lg-4 > .singleCertification > img{
+        width: 150;
+    }
+
+    .mainContainer .certification .firstRow .col-lg-4 > .singleCertification:hover{
+        box-shadow: var(--boxShadow);
+    }
+
+    .mainContainer .certification .description{
+        padding-left: 1rem;
+    }
+
+    .mainContainer .certification .description span{
+        display: block;
+
+    }
+
+    .mainContainer .certification .description .companyArea{
+        background: url(../img/banner/Untitled-2.png) no-repeat 45px 20px;
+        padding: 2rem 0;
+        width: 40rem;
+        height: 18rem;
+        padding-left: 8rem;
+        position: relative;
+    }
+
+    .mainContainer .certification .description .bg-panel{
+        position: absolute;
+        left: -200px; top: 0%;
+        background:#e029290a;
+        width: 400px;
+        height: 400px;
+        margin-left:340px;
+        z-index: -1;
+    }
+
+    .mainContainer .certification .description .companyArea .company{
+        font: normal bold 50px/25px var(--roboto);
+        color: #3e5160;
+        z-index: 2;
+    }
+
+    .mainContainer .certification .description .companyArea h2>span{
+        font: normal 500 22px/30px var(--roboto);
+        color: #59a5b5;
+    }
+
+    .mainContainer .certification .description .callArea{
+        padding-left: 10rem ;
+    }
+
+     /* Certification Ends */
+
+     /* More Information Area Begins */
+    
+    .mainContainer .moreInfo{
+        padding: 7rem 2rem;
+    }
+
+    .mainContainer .moreInfo .moreInfoTitle{
+        padding: 0 14rem;
+    }
+    
+    .mainContainer>.moreInfo .information{
+        padding: 2rem 0;
+        width: 16rem ;
+        margin: 5rem .5rem;
+        transition: box-shadow .7s ease;
+    }
+    .mainContainer>.moreInfo .information:hover{
+        box-shadow: var(--boxShadow);
+    }
+   
+    /* More Information Area Begins */
+
+    /* Hello World! Text Animation begins */
+
+    .line-1{
+        font-size: 25px;
+        border-right: 2px solid rgba(0, 0, 0, 0.75);
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .anim-typewriter{
+        animation: typewriter 4s steps(44) 1s 1 normal both,
+                blinkTextCursor 500ms steps(44) infinite normal;
+    }
+    @keyframes typewriter{
+        from{width: 0;}
+        to{width: 20em;}
+    }
+    @keyframes blinkTextCursor{
+        from{border-right-color: rgba(8, 8, 8, 0.75);}
+        to{border-right-color: transparent;}
+    }
+
+  /* Hello World! Text Animation Ends */
+
+  /* Design Area Begins */
+
+    .galleryArea{
+        padding: 4rem 0;
+    }
+
+    .galleryArea .buttonGroup button{
+        background: transparent;
+        border: none;
+        font: normal 500 16px/130px var(--roboto) ;
+        text-transform: uppercase;
+    }
+
+    .galleryArea .buttonGroup button + button{
+        padding-left: 3rem;
+
+    }
+
+    .galleryArea .grid .myDesign > .title h4{
+        font: normal 700 25px/12px var(--roboto);
+    }
+
+    .galleryArea .grid .myDesign .img a:hover img{
+        filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+    }
+
+    .galleryArea .grid .elementItem{
+        padding: 2rem 2rem;
+    }
+
+  /* Design Area Ends */
+
+
+   /* Recom Area begins */
+
+    .mainContainer .recomArea .recomTitle p{
+        padding: 1rem 7rem;
+    }
+
+    .mainContainer .recomArea .people{
+        background: #ffffff10;
+        box-shadow: var(--boxShadow);
+        margin: 3rem 0rem;
+    }
+
+    .mainContainer .recomArea .people .peopleImg{
+       padding: 2rem;
+    }
+
+    .mainContainer .recomArea .people .peopleImg img{
+        border-radius: 50%;
+    }
+
+    .mainContainer .recomArea .people .aboutPeople{
+        padding-top:  2rem;
+    }
+
+    .mainContainer .recomArea .people .aboutPeople h4{
+        font: normal 500 21px/20px var(--roboto) ;
+    }
+    .mainContainer .recomArea .people .aboutPeople h6{
+        font: normal 500 12px/20px var(--roboto) ;
+    }
+
+    .mainContainer .recomArea .people .aboutPeople p{
+        font-size: 12px;
+    }
+
+    .mainContainer .recomArea .owl-carousel .owl-item{
+        display: flex;
+        justify-content: center;
+        padding: 0 1.5rem;
+    }
+
+    .mainContainer .recomArea .owl-carousel .owl-dots .owl-dot.active span{
+        background: var(--primaryColor) ;
+        width: 12px;
+        height: 12px;
+    }
+
+    /* Recom Area Ends */
+
+    /* Footer Area Begins */
+
+    footer.footerArea{
+        padding: 5rem 0;
+        background: url(../img/banner/19449742.png);
+    }
+
+    footer.footerArea .social h5{
+        font: normal 500 23px/30px var(--roboto) ;
+    }
+
+    footer.footerArea .social a>i{
+        font-size: 30px;
+        padding: 2rem ;
+        color: var(--borderColor);
+    }
+
+    
+    footer.footerArea .social a>.fa-linkedin-in:hover{
+        color:var(--linkedin);
+    }
+
+    footer.footerArea .social a>.fa-twitter:hover{
+        color:var(--twitter);
+    }
+
+    footer.footerArea .social a>.fa-github:hover{
+        color:var(--github);
+    }
+
+    footer.footerArea .social a>.fa-stack-overflow:hover{
+        color:var(--stackoverfolow);
+    }
+
+    footer.footerArea .social a>.fa-instagram:hover{
+        color:var(--instagram);
+    }
+    
+    .copyright{
+        font: normal 500 12px/20px var(--roboto) ;
+    }
+
+    /* Footer Area Ends */
